@@ -35,7 +35,6 @@ Sales.prototype.salesByTheHour = function() {
 }
 
 const dailysalesDivElem = document.getElementById("daily sales");
-// document.getElementById("daily sales")
 const tableElem = document.createElement("table");
 dailysalesDivElem.appendChild(tableElem);
 
