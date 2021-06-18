@@ -125,7 +125,7 @@ function submitThis(event) {
   newSales.salesByTheHour();
   newSales.renderData();
   event.target.reset();
-  renderFooter(); //change attempt to get table footer to render prop numbers
+  renderFooter();
 }
 
 const seattle = new Sales("Seattle", 23, 65, 6.3);
