@@ -6,8 +6,6 @@ const storeHours = ["6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "
 
 const locationFormElem = document.getElementById("addLocationForm");
 
-const dailysalesDivElem = document.getElementById("daily sales");
-
 
 // -----------------Constructor Function------------------------ //
 
@@ -74,6 +72,7 @@ Sales.prototype.renderData = function() {
     dataCell.textContent = this.hourlySales[i];
     locationRow.appendChild(dataCell);
   }
+  
   let dailyTotalSales = document.createElement("th");
   dailyTotalSales.textContent = dailyTotal;
   locationRow.appendChild(dailyTotalSales);
@@ -142,4 +141,3 @@ locationFormElem.addEventListener("submit", submitThis);
 renderHeader();
 renderAllStores();
 renderFooter();
-// submitThis();
